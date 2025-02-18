@@ -19,7 +19,7 @@ search.addEventListener("click",(e)=>{
 })
 
 const searchweather=()=>{
-    let key="74ce8039242065c4a2d3a21aea65ed7f";
+    let key="api-key";
     let url=`https://api.openweathermap.org/data/2.5/weather?q=${loc.value}&appid=${key}`;
     fetch(url).then(Response=> Response.json()).then(result=>{
         if(result.cod === 200){
