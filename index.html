@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="main">
+    <form>
+      <input type="text" autocomplete="off" id="location">
+      <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+    <div class="data">
+      <div class="title">
+        <h2 class="location_name">khambhat</h2>
+        <img src="https://flagsapi.com/IN/flat/64.png" alt="">
+      </div>
+      <div class="temperature_data">
+        <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="" class="cloud" >
+        <div class="degree">
+          <h3 class="temp">20.30</h3><span class="celcius"> &#8451</span>
+        </div>
+        <p class="description">Light rain</p>
+      </div>
+
+    </div>
+    <ul>
+      <li>
+        <span >Clouds</span>
+        <i class="fa-solid fa-cloud" style="color: #ffff;"></i>
+        <span class="cld-per">100%</span>
+      </li>
+
+      <li>
+        <span>Humidity</span>
+        <i class="fa-solid fa-droplet" style="color: #ffff;"></i>
+        <span class="hum-per">77%</span>
+      </li>
+
+      <li>
+        <span>Pressure</span>
+        <i class="fa-solid fa-gauge" style="color: #ffff;"></i>
+        <span class="pre-per">1011hPa</span>
+      </li>
+    </ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

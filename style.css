@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom ,#DCDCDC 50%,#D0D0D0 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   font-family:sans-serif;
+}
+
+.main{
+  width: 300px;
+  height: max-content;
+  min-height: 300px;
+background-color: #fff;
+border-radius: 30px;
+box-shadow: 0 30px 50px #5553;
+padding: 30px;
+}
+form{
+    border: 1px solid #5553;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+}
+input{
+    border: none;
+    outline: none;
+   padding: 10px;
+   font-size: 1rem;
+   background-color: transparent;
+}
+button{
+    border: none;
+    outline: none;
+   padding: 5px;  
+ cursor: pointer;
+   background-color: transparent;
+}
+.main form button i{
+ opacity: 0.7;
+}
+
+.data{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.data .title{
+ display: flex;
+  gap: 10px;
+ align-items: center;
+}
+.title img{
+    width: 30px;
+}
+.data .temperature_data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.temperature_data img {
+    max-width:180px;
+    filter: drop-shadow(0 10px 50px #555);
+}
+.degree{
+    display: flex;
+}
+.degree .temp{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.celcius{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-left: 5px;
+}
+.description{
+    font-size: 1rem;
+    color: #2e2e2e;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+ul{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 10px;
+   list-style: none;
+}
+
+.main li{
+   background-color: #CC7342;
+   padding:20px 10px;
+   color: white;
+   font-size: small;
+   font-weight: bold;
+    display: flex;
+    background-image: linear-gradient(to bottom ,transparent 50%, #0003 50%);
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    border-radius: 10px;
+} 
+.main li:nth-child(2){
+    background-color: #b56291;
+}
+
+.main li:nth-child(3){
+    background-color: #48567b;
+}
+
+.main li i{
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+.error{
+    animation: ani 0.2s linear 1;
+}
+
+@keyframes ani {
+    0%{
+      transform: translate(10px ,5px);
+    }
+    25%{
+       transform: translate(-5px,0); 
+    }
+    50%{
+        transform: translate(8px ,2px);
+    }
+    75%{
+        transform: translate(-2px,5px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
