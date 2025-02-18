@@ -31,7 +31,6 @@ const searchweather=()=>{
             cloud.textContent=`${result.clouds.all}%`;
             Humidity.textContent=`${result.main.humidity}%`;
             pressure.textContent=`${result.main.pressure}hPa`;
-            console.log(result);
             }
             else{
                 main.classList.add("error");
@@ -40,4 +39,12 @@ const searchweather=()=>{
                 }, 500);
             }
     })
+    
 }
+
+const defaultloc=()=>{
+loc.value="new york";
+    searchweather();
+}
+
+defaultloc();
